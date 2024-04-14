@@ -1,0 +1,104 @@
+.cards{
+    padding: 55px 40px;
+    background-color: #F5F5F5;
+}
+.card__title{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 24px;
+line-height: 187%;
+color: #222;
+margin-bottom: 32px;
+}
+.card__text{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 187%;
+color: #525252;
+margin-bottom: 33px;
+}
+.card__item{
+    border-radius: 20px;
+width: 299px;
+height: 314px;
+box-shadow: 0 4px 94px 0 rgba(0, 0, 0, 0.05);
+background: #fff;
+padding: 30px 31px 24px 28px;
+}
+.card__btn{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 187%;
+color: #0cbe64;
+border-radius: 8px;
+width: 119px;
+height: 36px;
+border: none;
+background: rgba(12, 190, 100, 0.15);
+margin-bottom: 17.5px;
+}
+.card__sub_title{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+line-height: 187%;
+color: #000;
+margin-bottom: 13.86px;
+}
+.card__sub_text{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 187%;
+color: #525252;
+margin-bottom: 6.77px;
+}
+.card__link{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 187%;
+color: #dc7000;
+&::after{
+    content: "";
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('../../img/card-link.svg');
+    margin-left: 9px;
+}
+}
+.card__item_2{
+    display: none;
+}
+@media screen and (min-width:940px) {
+    .cards{
+        padding: 69px 135px 100px 135px;
+    }
+    .card__title{
+        font-size: 30px;
+        margin-bottom: 32px;
+    }
+    .card__text{
+        max-width: 545px;
+    }
+    .card__list{
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+        grid-auto-rows: 348px;
+        margin-top: 65px;
+    }
+   .card__item_2{
+    border-radius: 20px;
+    width: 299px;
+    height: 314px;
+    box-shadow: 0 4px 94px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    padding: 30px 31px 24px 28px;
+    display: block;
+   }
+}
