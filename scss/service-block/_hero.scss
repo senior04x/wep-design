@@ -1,0 +1,118 @@
+.service__hero{
+    padding: 62px 28px;
+}
+.service__hero_block{
+    text-align: center;
+}
+.service__hero_link_block{
+    display: flex;
+    gap: 5px;
+    display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.service__hero_link{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 209%;
+color: #848484;
+}
+.service__hero_link_2{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 209%;
+    color: #e47500;
+}
+.service__hero_title{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 25px;
+line-height: 180%;
+text-align: center;
+color: #222;
+margin-top: 33px;
+margin-bottom: 33px;
+}
+.service__hero_text{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 12px;
+line-height: 187%;
+text-align: center;
+color: #898989;
+margin-bottom: 67px;
+}
+.service__hero_list{
+    text-align: start;
+    border-radius: 10px;
+background: #f4f4f4;
+padding: 31px 25px;
+display: flex;
+flex-wrap: wrap;
+gap: 32px;
+}
+.service__hero_item{
+    flex-grow: 1;
+    flex-basis: 94px;
+    align-items: center;
+}
+.service__hero_sub_link{
+    font-family: var(--second-family);
+font-weight: 700;
+font-size: 17px;
+line-height: 176%;
+color: #0b132a;
+}
+.service__hero_sub_text{
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 214%;
+color: #4f5665;
+}
+.service__hero_item::before{
+    content:"";
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('../../img/service-hero.svg');
+    margin-right: 12px;
+    align-items: center;
+}
+@media screen and (min-width:940px) {
+    .service__hero{
+        padding: 94px 150px;
+    }
+    .service__hero_title{
+        font-size: 33px;
+        margin-top: 15px;
+        margin-bottom: 13px;
+    }
+    .service__hero_text{
+        font-size: 16px;
+    }
+    .service__hero_list{
+        display: flex;
+        justify-content: space-between;
+    }
+     .service__hero_sub_link{
+        font-size: 25px;
+
+     }
+     .service__hero_sub_text{
+        font-size: 20px;
+     }
+     .service__hero_item::before{
+        content:"";
+        width: 55px;
+        height: 55px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url('../../img/service-her-desktop.svg');
+        margin-right: 36.5px;
+        align-items: center;
+     }
+}
